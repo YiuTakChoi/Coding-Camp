@@ -5,38 +5,9 @@
 #ifndef LINKED_LIST_LIST_H
 #define LINKED_LIST_LIST_H
 #include <iostream>
+#include "Node.cpp"
 
-template <typename T>class Node{
-private:
-    T data;
-    Node* next;
-public:
 
-    Node() {
-        this->next = NULL;
-    };
-
-    Node(T firstValue) {
-        this->data = firstValue;
-        this->next = NULL;
-    };
-
-    ~Node(){
-        std::cout << "======Current node has been released with value of " << this->data << " has been released======" << std::endl;
-    };
-
-    [[nodiscard]]T getValue() const{
-        return this->data;
-    }
-
-    Node* getNext(){
-        return this->next;
-    }
-
-    void setNext(Node* nextNode){
-        this->next = nextNode;
-    }
-};
 
 template<typename T> class List {
 private:
