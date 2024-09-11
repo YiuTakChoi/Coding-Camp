@@ -4,7 +4,7 @@
 #include "List.h"
 
 /**
- * Default Constructor
+ * Default Constructor.
  * */
 template <typename T>
 List<T>::List(){
@@ -24,9 +24,9 @@ List<T>::List(T firstValue) {
 }
 
 /**
- * Returns the index of the target, -1 and the final counter++ are invalid outputs
+ * Returns the index of the target, -1 and the final counter++ are invalid outputs.
  * -1: The list is empty.
- * return counter++ when loop ends: The target is not within the scope of current list object
+ * return counter++ when loop ends: The target is not within the scope of current list object.
  * */
 template <typename T>
 int List<T>::findValue(T target){
@@ -45,11 +45,17 @@ int List<T>::findValue(T target){
     return counter++;
 };
 
+/**
+ * Returns the length of current List object.
+ * */
 template <typename T>
 [[nodiscard]] int List<T>::getLength() const{
     return this->length;
 };
 
+/**
+ * Add a new element to the end of the List object.
+ * */
 template <typename T>
 void List<T>::pushBack(T value){
     Node<T>* currentNode = new Node(value);
@@ -59,6 +65,9 @@ void List<T>::pushBack(T value){
     this->length++;
 }
 
+/**
+ * Add a new element to the designated index of the List object.
+ * */
 template <typename T>
 void List<T>::pushInCertainIndex(int index, T value){
     if(index < 0 || index >= this->length)
@@ -72,6 +81,9 @@ void List<T>::pushInCertainIndex(int index, T value){
     previous->setNext(current);
 }
 
+/**
+ * Print the elements within current List object.
+ * */
 template <typename T>
 void List<T>::printList() {
     Node<T>* current = this->head->getNext();
