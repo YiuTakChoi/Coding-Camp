@@ -1,2 +1,5 @@
 # CPP_Data_Structure
 Code for data structure course written in CPP language
+The code should be pushed into the file directory with your name on. For example, there is a directory named: Jeremy, which is my name. My submission of the code therefore, should be under this specific directory.
+If you are new here, make sure to create a new different file path, lets say, John Doe, then, should create a file path called John Doe and submit his code under that directory.
+Codes in this whole repository are allowed to download, so feel free to download and review any code you are interested in.
