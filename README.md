@@ -1,5 +1,5 @@
 # CPP_Data_Structure
-<p>Collaborators:kinyokun, mizhipangci</p>
+<p>Collaborators:kinyokun, mizhipangci,Astesia</p>
 <p>IDE: CLion</p>
 <h3>1. Code for data structure course written in CPP language</h3>
 <h3>2. Make sure to push your code into the correct directory</h3>
