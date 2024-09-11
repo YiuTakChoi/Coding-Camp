@@ -8,3 +8,5 @@ Codes in this whole repository are allowed to download, so feel free to download
 </p>
 <h3>4. How to create a new directory?</h3>
 <p>Watch the turtorial here: <a href>https://github.com/orgs/community/discussions/22534</a> or you could just simply create a new directory within Clion IDE</p>
+<h3>5. Clion with Git tutorials</h3>
+<p>IDEs like Clion always comes with version control features. In this part of the README file, I will walk you through the process of setting up remote repository, pulling codes, committing and pushing codes.</p>
