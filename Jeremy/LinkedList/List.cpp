@@ -66,12 +66,19 @@ void List<T>::pushBack(T value){
 }
 
 /**
- * Add a new element to the designated index of the List object.
+ * Add a new element after the designated index of the List object.
  * */
 template <typename T>
-void List<T>::pushInCertainIndex(int index, T value){
-    if(index < 0 || index >= this->length)
+void List<T>::pushAfterCertainIndex(int index, T value){
+    if(index < 0 || index > this->length)
         return;
+    if(index == this->length){
+        auto newNode = new Node<T>(value);
+        newNode->setNext(NULL);
+        this->tailNode->setNext(newNode);
+        this->length++;
+        return;
+    }
     Node<T>* previous = this->head;
     for(int i = 0; i < index; i++){
         previous = previous->getNext();

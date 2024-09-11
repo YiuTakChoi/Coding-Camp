@@ -57,7 +57,7 @@ public:
     [[nodiscard]] int getLength() const;
     void findAndReplaceValue(int target, int replace);
     void pushBack(T value);
-    void pushInCertainIndex(int index, T value);
+    void pushAfterCertainIndex(int index, T value);
 //    void deletePosition(int index){
 //        if(index < 0 || index >= this->length)
 //            return;
