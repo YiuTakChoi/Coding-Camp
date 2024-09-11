@@ -7,4 +7,4 @@
 Codes in this whole repository are allowed to download, so feel free to download and review any code you are interested in.
 </p>
 <h3>4. How to create a new directory?</h3>
-<p>Watch the turtorial here: <a href>https://github.com/orgs/community/discussions/22534</a></p>
+<p>Watch the turtorial here: <a href>https://github.com/orgs/community/discussions/22534</a> or you could just simply create a new directory within Clion IDE</p>
