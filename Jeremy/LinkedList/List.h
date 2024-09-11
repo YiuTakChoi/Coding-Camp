@@ -6,9 +6,9 @@
 #define LINKED_LIST_LIST_H
 #include <iostream>
 
-class Node{
+template <typename T>class Node{
 private:
-    int data;
+    T data;
     Node* next;
 public:
 
@@ -16,7 +16,7 @@ public:
         this->next = NULL;
     };
 
-    Node(int firstValue) {
+    Node(T firstValue) {
         this->data = firstValue;
         this->next = NULL;
     };
@@ -25,7 +25,7 @@ public:
         std::cout << "======Current node has been released with value of " << this->data << " has been released======" << std::endl;
     };
 
-    [[nodiscard]]int getValue() const{
+    [[nodiscard]]T getValue() const{
         return this->data;
     }
 
@@ -38,86 +38,26 @@ public:
     }
 };
 
-class List {
+template<typename T> class List {
 private:
-    Node* head;
-    int length;
-    Node* tailNode;
+    Node<T>* head;
+    int length{};
+    Node<T>* tailNode;
 public:
-
-    /**
-     * Default Constructor
-     * */
-    List(){
-        this->head = new Node();
-        this->tailNode = this->head;
-        this->length = 0;
-    };
-
-    /**
-     * Constructor with initial value (not recommended since head should not be used to store any value).
-     * */
-    List(int firstValue){
-        this->head = new Node(firstValue);
-        this->tailNode = this->head;
-        this->length = 0;
-    };
-
+    List();
+    List(T firstValue);
     /**
      * Destructor: Releasing resources obtained by current object when deleting it.
      * */
     ~List(){
         std::cout << "======The List object has been destructed======" << std::endl;
     };
+    int findValue(T target);
 
-    /**
-     * Returns the index of the target, -1 and the final counter++ are invalid outputs
-     * -1: The list is empty.
-     * return counter++ when loop ends: The target is not within the scope of current list object
-     * */
-    int findValue(int target){
-        if(this->head == NULL){
-            return -1;
-        }
-        Node* current = this->head;
-        int counter = 0;
-        while(current){
-            if(current->getValue() == target){
-                return counter;
-            }
-            counter++;
-            current = current->getNext();
-        }
-        return counter++;
-    };
-
-    [[nodiscard]] int getLength() const{
-        return this->length;
-    };
-    void findAndReplaceValue(int target, int replace){
-
-    };
-
-    void pushBack(int value){
-        Node* currentNode = new Node(value);
-        tailNode->setNext(currentNode);
-        currentNode->setNext(NULL);
-        this->tailNode = currentNode;
-        this->length++;
-    };
-
-    void pushInCertainIndex(int index, int value){
-        if(index < 0 || index >= this->length)
-            return;
-        Node* previous = this->head;
-        for(int i = 0; i < index; i++){
-            previous = previous->getNext();
-        }
-        Node* current = new Node(value);
-        current->setNext(previous->getNext());
-        previous->setNext(current);
-    };
-
+    [[nodiscard]] int getLength() const;
+    void findAndReplaceValue(int target, int replace);
+    void pushBack(T value);
+    void pushInCertainIndex(int index, T value);
 //    void deletePosition(int index){
 //        if(index < 0 || index >= this->length)
 //            return;
@@ -125,18 +65,7 @@ public:
 //        Node* previous = this->head;
 //
 //    };
-
-    void printList(){
-        Node* current = this->head->getNext();
-        if(!current){
-            std::cout << "No Element" << std::endl;
-            return;
-        }
-        while(current){
-            std::cout << current->getValue();
-            current = current->getNext();
-        }
-    };
+    void printList();
 
 };
 

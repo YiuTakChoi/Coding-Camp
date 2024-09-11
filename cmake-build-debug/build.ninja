@@ -49,11 +49,17 @@ cmake_ninja_workdir = /Users/jeremychoi/Desktop/Projects/Cpp$ Projects/Junior$ C
 
 build cmake_object_order_depends_target_Linked_List: phony || CMakeFiles/Linked_List.dir
 
-build CMakeFiles/Linked_List.dir/Jeremy/main.cpp.o: CXX_COMPILER__Linked_List_unscanned_Debug /Users/jeremychoi/Desktop/Projects/Cpp$ Projects/Junior$ C$ Course$ Codes/Linked_List/Jeremy/main.cpp || cmake_object_order_depends_target_Linked_List
-  DEP_FILE = CMakeFiles/Linked_List.dir/Jeremy/main.cpp.o.d
+build CMakeFiles/Linked_List.dir/main.cpp.o: CXX_COMPILER__Linked_List_unscanned_Debug /Users/jeremychoi/Desktop/Projects/Cpp$ Projects/Junior$ C$ Course$ Codes/Linked_List/main.cpp || cmake_object_order_depends_target_Linked_List
+  DEP_FILE = CMakeFiles/Linked_List.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/Linked_List.dir
-  OBJECT_FILE_DIR = CMakeFiles/Linked_List.dir/Jeremy
+  OBJECT_FILE_DIR = CMakeFiles/Linked_List.dir
+
+build CMakeFiles/Linked_List.dir/Jeremy/LinkedList/List.cpp.o: CXX_COMPILER__Linked_List_unscanned_Debug /Users/jeremychoi/Desktop/Projects/Cpp$ Projects/Junior$ C$ Course$ Codes/Linked_List/Jeremy/LinkedList/List.cpp || cmake_object_order_depends_target_Linked_List
+  DEP_FILE = CMakeFiles/Linked_List.dir/Jeremy/LinkedList/List.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/Linked_List.dir
+  OBJECT_FILE_DIR = CMakeFiles/Linked_List.dir/Jeremy/LinkedList
 
 
 # =============================================================================
@@ -63,7 +69,7 @@ build CMakeFiles/Linked_List.dir/Jeremy/main.cpp.o: CXX_COMPILER__Linked_List_un
 #############################################
 # Link the executable Linked_List
 
-build Linked_List: CXX_EXECUTABLE_LINKER__Linked_List_Debug CMakeFiles/Linked_List.dir/Jeremy/main.cpp.o
+build Linked_List: CXX_EXECUTABLE_LINKER__Linked_List_Debug CMakeFiles/Linked_List.dir/main.cpp.o CMakeFiles/Linked_List.dir/Jeremy/LinkedList/List.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk
   OBJECT_DIR = CMakeFiles/Linked_List.dir
   POST_BUILD = :

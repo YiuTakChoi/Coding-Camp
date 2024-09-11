@@ -1,7 +1,7 @@
 #include <iostream>
-#include "Jeremy/LinkedList/List.h"
+#include "Jeremy/LinkedList/List.cpp"
 int main() {
-    List* myList = new List();
+    auto myList = new List<int>();
     myList->pushBack(1);
     myList->pushBack(2);
     myList->pushInCertainIndex(1, 5);
