@@ -1,5 +1,6 @@
 # CPP_Data_Structure
-Collaborators:kinyokun, mizhipangci
+<p>Collaborators:kinyokun, mizhipangci</p>
+<p>IDE: CLion</p>
 <h3>1. Code for data structure course written in CPP language</h3>
 <h3>2. Make sure to push your code into the correct directory</h3>
 <p>The code should be pushed into the file directory with your name on. For example, there is a directory named: Jeremy, which is my name. My submission of the code therefore, should be under this specific directory.</p>
