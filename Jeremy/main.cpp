@@ -1,5 +1,5 @@
 #include <iostream>
-#include "List.h"
+#include "LinkedList/List.h"
 int main() {
     List* myList = new List();
     myList->pushBack(1);
