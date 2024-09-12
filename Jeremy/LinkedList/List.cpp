@@ -103,3 +103,21 @@ void List<T>::printList() {
         current = current->getNext();
     }
 }
+
+/**
+ * Replaces the first found target value.
+ * The function will ignore the rest of the elements who has the value of target.
+ * */
+template <typename T>
+void List<T>::replaceFirstFound(T target, T replace) {
+    int index = this->findValue(target);
+    if(index < 0 || index > this->length){
+        std::cout << "The valid is not within the scope of this list!" << std::endl;
+        return;
+    }
+    auto currentNode = this->head->getNext();
+    //get to the value
+    for(int i = 1; i < index; i++)
+        currentNode = currentNode->getNext();
+    currentNode->setValue(replace);
+}

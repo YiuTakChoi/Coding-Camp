@@ -83,6 +83,37 @@ build Linked_List: CXX_EXECUTABLE_LINKER__Linked_List_Debug CMakeFiles/Linked_Li
   TARGET_FILE = Linked_List
   TARGET_PDB = Linked_List.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target Astesia
+
+
+#############################################
+# Order-only phony target for Astesia
+
+build cmake_object_order_depends_target_Astesia: phony || CMakeFiles/Astesia.dir
+
+build CMakeFiles/Astesia.dir/Astesia/test.cpp.o: CXX_COMPILER__Astesia_unscanned_Debug /Users/jeremychoi/Desktop/Projects/Cpp$ Projects/Junior$ C$ Course$ Codes/Linked_List/Astesia/test.cpp || cmake_object_order_depends_target_Astesia
+  DEP_FILE = CMakeFiles/Astesia.dir/Astesia/test.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/Astesia.dir
+  OBJECT_FILE_DIR = CMakeFiles/Astesia.dir/Astesia
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Astesia
+
+
+#############################################
+# Link the executable Astesia
+
+build Astesia: CXX_EXECUTABLE_LINKER__Astesia_Debug CMakeFiles/Astesia.dir/Astesia/test.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk
+  OBJECT_DIR = CMakeFiles/Astesia.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Astesia
+  TARGET_PDB = Astesia.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -117,7 +148,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/jeremychoi/Desktop/Projects/Cpp Projects/Junior C Course Codes/Linked_List/cmake-build-debug
 
-build all: phony Linked_List
+build all: phony Linked_List Astesia
 
 # =============================================================================
 # Built-in targets

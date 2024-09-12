@@ -26,7 +26,7 @@ public:
     int findValue(T target);
 
     [[nodiscard]] int getLength() const;
-    void findAndReplaceValue(int target, int replace);
+    void replaceFirstFound(T target, T replace);
     void pushBack(T value);
     void pushAfterCertainIndex(int index, T value);
 //    void deletePosition(int index){

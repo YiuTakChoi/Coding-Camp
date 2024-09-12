@@ -26,6 +26,11 @@ Node<T>* Node<T>::getNext(){
 }
 
 template <typename T>
+void Node<T>::setValue(T input) {
+    this->data = input;
+}
+
+template <typename T>
 void Node<T>::setNext(Node* nextNode){
     this->next = nextNode;
 }

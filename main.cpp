@@ -9,6 +9,9 @@ int main() {
 //    std::cout << myList->getLength();
     myList->printList();
     std::cout << std::endl;
+    myList->replaceFirstFound(2, 3);
+    myList->printList();
+    std::cout << std::endl;
 //    std::cout << "Hello, World!" << std::endl;
     delete(myList);
     return 0;

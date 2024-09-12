@@ -1,12 +1,16 @@
 # ninja log v5
-258	287	1726049011869244442	Linked_List	446a62a2a7a8725a
-0	52	1726049495467907136	build.ninja	1732617b0ef4ed73
-4	258	1726049011839213817	CMakeFiles/Linked_List.dir/main.cpp.o	28d48670ced148a3
-4	247	1726049011828310453	CMakeFiles/Linked_List.dir/Jeremy/LinkedList/List.cpp.o	c062824a0430ca69
-0	39	1726049495467907136	build.ninja	1732617b0ef4ed73
-3	253	1726049495723280170	CMakeFiles/Linked_List.dir/Jeremy/LinkedList/Node.cpp.o	b7b208bd27d1d148
-4	253	1726049495723382421	CMakeFiles/Linked_List.dir/Jeremy/LinkedList/List.cpp.o	c062824a0430ca69
-4	262	1726049495732943554	CMakeFiles/Linked_List.dir/main.cpp.o	28d48670ced148a3
+331	362	1726051208496446769	Astesia	14289ef9fd7f96d3
 5	253	1726049516844295498	CMakeFiles/Linked_List.dir/Jeremy/LinkedList/List.cpp.o	c062824a0430ca69
+3	253	1726049495723280170	CMakeFiles/Linked_List.dir/Jeremy/LinkedList/Node.cpp.o	b7b208bd27d1d148
 4	265	1726049516856185112	CMakeFiles/Linked_List.dir/main.cpp.o	28d48670ced148a3
+0	331	1726051208465221390	CMakeFiles/Astesia.dir/Astesia/test.cpp.o	cc1b1268835b756f
+0	39	1726112122153932607	build.ninja	1732617b0ef4ed73
 265	296	1726049516887946417	Linked_List	7e2bb6075906bbd3
+1	52	1726112122153932607	build.ninja	1732617b0ef4ed73
+4	631	1726112122785799233	CMakeFiles/Linked_List.dir/Jeremy/LinkedList/List.cpp.o	c062824a0430ca69
+4	632	1726112122785800566	CMakeFiles/Linked_List.dir/Jeremy/LinkedList/Node.cpp.o	b7b208bd27d1d148
+3	648	1726112122805215923	CMakeFiles/Linked_List.dir/main.cpp.o	28d48670ced148a3
+648	2677	1726112124835795246	Linked_List	7e2bb6075906bbd3
+4	249	1726112271413173596	CMakeFiles/Linked_List.dir/Jeremy/LinkedList/List.cpp.o	c062824a0430ca69
+3	262	1726112271426258266	CMakeFiles/Linked_List.dir/main.cpp.o	28d48670ced148a3
+262	292	1726112271457471695	Linked_List	7e2bb6075906bbd3

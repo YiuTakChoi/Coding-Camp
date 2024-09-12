@@ -18,6 +18,7 @@ public:
     };
     [[nodiscard]]T getValue() const;
     Node<T>* getNext();
+    void setValue(T input);
     void setNext(Node* nextNode);
 };
 
